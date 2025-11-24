@@ -111,7 +111,7 @@ Screenshot (Optional)
 
 You can add a screenshot here later by uploading an image:
 
-!["C:\Users\amany\OneDrive\Desktop\firstProgect pi.mp4"](images/dashboard.png)
+![Dashboard Screenshot]("C:\Users\amany\OneDrive\Desktop\firstProgect pi.mp4")
 
 How to Use
 
