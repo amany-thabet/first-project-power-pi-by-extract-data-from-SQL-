@@ -1,16 +1,14 @@
 # first-project-power-pi-by-extract-data-from-SQL
+Overview
 
-This project is a fully designed Sales Analytics Dashboard built in Power BI, using data extracted directly from SQL Server. The goal of the dashboard is to provide a clear, interactive, and insightful view of overall sales performance across different dimensions such as time, product categories, shipping methods, and countries.
+This project is a fully interactive Sales Analytics Dashboard built using Power BI.
+The data was extracted directly from SQL Server, cleaned using Power Query, modeled inside Power BI, and analyzed using DAX measures.
+The dashboard provides a comprehensive view of sales performance across years, product categories, countries, and shipping methods.
 
-What I Did
+Features
+1. Key Performance Indicators (KPIs)
 
-I connected Power BI to SQL Server, imported the required tables, and performed all necessary transformations using Power Query. After cleaning and shaping the data, I built a structured data model and created meaningful relationships between the tables. I also created several DAX measures to calculate totals, counts, and dynamic values used throughout the dashboard.
-
-Dashboard Features
-
-The dashboard includes several analytical components:
-
-KPIs Section: Shows key metrics such as:
+The dashboard includes a full KPI section displaying:
 
 Total Orders
 
@@ -23,32 +21,104 @@ Total Due
 Total Freight
 
 Total Tax
-These KPIs help give an immediate overview of the business performance.
 
-Year Selection Buttons: Allow the user to filter all visuals by year (2011–2014) for easy comparison across different time periods.
+These KPIs give users a clear and immediate understanding of overall business performance.
 
-Orders by Month (Line Chart): Visualizes monthly sales trends and helps identify seasonal patterns or drops in performance.
+2. Year-Based Filtering
 
-Orders by Product Category (Treemap): Displays the contribution of each product category (Accessories, Bikes, Clothing, Components) to the overall orders.
+Interactive buttons (2011–2014) allow users to filter all visuals by year and compare performance across time.
 
-Orders by Ship Method (Donut Chart): Shows how customers prefer to ship their orders and highlights which shipping method is most commonly used.
+3. Orders by Month
 
-Orders and Total Due by Country (Line + Column Chart): Combines two metrics to compare both the number of orders and the financial due amount across different countries, supporting geographic performance analysis.
+A line chart showing monthly order trends to help identify growth patterns, seasonality, and performance changes.
+
+4. Orders by Product Category
+
+A treemap that visualizes category-level insights across:
+
+Accessories
+
+Bikes
+
+Clothing
+
+Components
+
+This helps identify best-selling product categories.
+
+5. Orders by Shipping Method
+
+A donut chart comparing shipping methods and highlighting customer preferences.
+
+6. Orders & Total Due by Country
+
+A combined bar + line chart showing both:
+
+Number of orders
+
+Total Due amount
+
+This supports geographic analysis and reveals high-performing regions.
+
+Data Source & Processing
+• Data Extraction
+
+The dataset was retrieved from SQL Server using direct connection and SQL queries.
+
+• Data Cleaning
+
+Performed in Power Query, including:
+
+Removing nulls
+
+Standardizing fields
+
+Adjusting data types
+
+Preparing tables for modeling
+
+• Data Modeling
+
+A structured star-schema style model was created inside Power BI with clear relationships between fact and dimension tables.
+
+• DAX Measures
+
+Several DAX measures were written to support KPI calculations and dynamic visuals.
 
 Value for the Client
 
 This dashboard enables the client to:
 
-Quickly understand the overall sales performance through clear KPIs.
+Gain instant visibility into key sales metrics
 
-Identify top-performing product categories and markets.
+Identify the best performing products and regions
 
-Track monthly trends to support planning and forecasting.
+Track business performance across months and years
 
-Monitor shipping method efficiency and customer shipping preferences.
+Understand customer shipping behavior
 
-Compare countries to determine where the business is performing strongly or where improvements are needed.
+Make informed, data-driven decisions
 
-Make data-driven decisions backed by clear visual insights.
+Improve forecasting and strategic planning
 
-The dashboard is designed to be clean, interactive, and easy to navigate, ensuring that anyone—from managers to analysts—can use it effectively.
+The dashboard is optimized for clarity, performance, and ease of use.
+
+Project Files
+
+SalesDashboard.pbix → (Uploaded in this repository)
+
+Screenshot (Optional)
+
+You can add a screenshot here later by uploading an image:
+
+![Dashboard Screenshot](images/dashboard.png)
+
+How to Use
+
+Download the .pbix file from the repository
+
+Open it using Power BI Desktop
+
+Refresh data if needed
+
+Interact with filters, slicers, and visuals to explore insights
